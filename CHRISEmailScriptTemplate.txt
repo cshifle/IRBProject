@@ -1,0 +1,16 @@
+//This is just a template I created, it will be changed when needed
+/* this is also just a draft, i have much more in my documents folder 
+The script works like this:
+1: it generates a random number and sends it to the registering user
+2: we enter that number into the database and associate it with the user
+3: send a link to go to and enter the number back in along with their email address
+4: email successfully verified*/
+<?php
+ $to = "recipient@example.com";
+ $subject = "SUBJECT GOES HERE";
+ $body = "Hi,\n\nHow are you?";
+ if (mail($to, $subject, $body)) {
+   echo("<p>MESSAGE GOES HERE IF SENT SUCCESSFULLY</p>");
+  } else {
+   echo("<p>THE MESSAGE FAILED</p>");
+  }
